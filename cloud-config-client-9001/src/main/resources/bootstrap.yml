@@ -1,0 +1,26 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: config-client-service
+  cloud:
+    config:
+      label: main
+      name: config
+      profile: dev
+      uri: http://localhost:7003 # uri的值为config-server的地址
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"

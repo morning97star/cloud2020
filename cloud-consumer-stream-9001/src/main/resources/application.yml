@@ -1,0 +1,26 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: stream-consumer
+  cloud:
+    stream: ## 消息驱动相关配置
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        input:
+          destination: myExchange # 消费者可以根据该值找到对应的消息
+          content-type: application/json
+          binder: defaultRabbit
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
