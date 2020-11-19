@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-9001</artifactId>
+    <artifactId>cloud-sleuth-9005</artifactId>
 
     <dependencies>
         <dependency>

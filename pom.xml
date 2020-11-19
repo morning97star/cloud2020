@@ -21,6 +21,7 @@
         <module>cloud-provider-stream-8001</module>
         <module>cloud-consumer-stream-9001</module>
         <module>cloud-consumer-stream-9002</module>
+        <module>cloud-sleuth-9005</module>
     </modules>
     <packaging>pom</packaging>
 
