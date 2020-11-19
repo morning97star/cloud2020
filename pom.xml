@@ -20,6 +20,7 @@
         <module>cloud-config-client-9001</module>
         <module>cloud-provider-stream-8001</module>
         <module>cloud-consumer-stream-9001</module>
+        <module>cloud-consumer-stream-9002</module>
     </modules>
     <packaging>pom</packaging>
 
