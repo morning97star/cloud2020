@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
     name: stream-consumer
@@ -20,7 +20,7 @@ spring:
           destination: myExchange # 消费者可以根据该值找到对应的消息
           content-type: application/json
           binder: defaultRabbit
-          group: group_a
+#          group: group_a
 eureka:
   client:
     service-url:
