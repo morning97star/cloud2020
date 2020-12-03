@@ -4,7 +4,15 @@ server:
 spring:
   application:
     name: order-service
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://114.115.167.234:3308/ydb2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+      username: shunova
+      password: shunova[db]
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+
+
+
